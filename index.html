@@ -49,8 +49,15 @@
   <main>
     <section class="title">
         <h1>SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
-        <button class="btnestudio" type="button">Solicite nuestro servicio</button>
-    </section >
+        
+        <button data-modal-open class="btnestudio" type="button">Solicite nuestro servicio</button>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolorum non tenetur fugiat architecto numquam, animi earum rerum, maiores voluptatum harum veritatis temporibus repellat sint ipsam, perferendis iusto omnis tempore.</p>
+            <button class="btnclose" data-modal-close>Cerrar</button>
+          </div>
+        </div>
+     </section >
 
     <section class="container">
       <ul class="card">
@@ -90,8 +97,6 @@
     <section class="container">
       <h2>A qué nos dedicamos</h2>
       <ul class="divisor2">
-
-
 
         <li class="img-recuadro1">
           <p class="recuadro">APLICACIONES DE ESCRITORIO</p>
@@ -325,5 +330,6 @@
     </section>
     </div>
   </footer>
+  <script src="./js/modal.js"></script>
 </body>
 </html>
