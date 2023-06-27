@@ -13,6 +13,26 @@ ul {
     align-items: center;
 }
 
+.link {
+    position: relative;
+    display: inline-block;
+}
+
+.current {
+    color: #2196F3;
+}
+
+.current::after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #2196F3;
+    border-radius: 2px;
+    bottom: -24px;
+}
+
 .webstudio {
     font-family: Raleway;
     font-size: 26px;
@@ -53,12 +73,12 @@ ul {
     fill: #2196F3;
 }
 
-.current {
-    color: #2196F3;
-}
-
 a{
     color: #212121;
+}
+
+hr{
+    margin: 0;
 }
 
 header a {
@@ -177,21 +197,10 @@ body{
 }
 
 .box {
-    width:"370px";
-    height:"294px";
-    left: calc(50% - 370px/2 - 400px);
-    top: calc(50% - 404px/2 - 464px);
-    background: #FFFFFF;
     border: 1px solid #EEEEEE;
 }
 
 .box:hover{
-    width:"370px";
-    height:"294px";
-    left: calc(50% - 370px/2 - 400px);
-    top: calc(50% - 404px/2 - 464px);
-
-    background: #FFFFFF;
     border: 1px solid #EEEEEE;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
         0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -292,32 +301,26 @@ h2 {
 
 
 
-.img-recuadro1{
+.img-recuadro{
     position: relative;
     width: 370px;
     height: 294px;
     color: rgb(255, 255, 255);
     padding: 0px;
+}
+
+.img1{
     background-image: url(../images/tablet-1.jpg);
 }
 
-.img-recuadro2{
-    position: relative;
-    width: 370px;
-    height: 294px;
-    color: rgb(255, 255, 255);
-    padding: 0px;
+.img2{
     background-image: url(../images/portatil-2.jpg);
 }
 
-.img-recuadro3{
-    position: relative;
-    width: 370px;
-    height: 294px;
-    color: rgb(255, 255, 255);
-    padding: 0px;
+.img3{
     background-image: url(../images/tablet-3.jpg);
 }
+
 .recuadro {
     position: absolute;
     bottom: 0;
@@ -327,7 +330,6 @@ h2 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
     margin: 0;   
     background: rgba(47, 48, 58, 0.8);
-    font-family: 'Roboto';
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
@@ -395,7 +397,7 @@ h3 .target {
     border-radius: 50%;
     fill: #ffffff;
     background-color: #03a9f4;
-    transition: all ease 0.5s;
+    transition: ease 0.5s;
 }
 
 .i-redes{
@@ -442,7 +444,7 @@ h3 .target {
     justify-content: center;
     border-color: #2196F3;
     fill: #2196F3;
-    transition: all ease 0.5s;
+    transition: ease 0.5s;
 }
 
 .i-union{
@@ -550,8 +552,8 @@ a:isvited {
     color: #FFFFFF;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vw;
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 1;
     visibility: visible;
